@@ -480,9 +480,9 @@ a {
 }
 
 .container {
-  width  : 900px;
+  width  : 880px;
   margin : 0 auto;
-  padding: 0 10px;
+  padding: 0;
 
 }
 /**************************************
@@ -533,11 +533,11 @@ a {
 }
 
 .nav__link {
-  display    : block;
-  padding    : 20px 12px;
-  font-size  : 0.875rem;
-  line-height: 2.143;
-  color      : #000;
+  display       : block;
+  padding       : 20px 12px;
+  font-size     : 0.875rem;
+  line-height   : 2.143;
+  color         : #000;
   text-transform: uppercase;
 }
 .nav__link--iconed {
@@ -556,4 +556,91 @@ a {
 
 .nav__link-icon svg {
   fill: #a6a6a6;
+}
+
+/**************************************
+              Header
+ **************************************/
+
+.slider {
+  position: relative;
+}
+.slider__radio-btn {
+  display: none;
+}
+.slider__controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 91px;
+}
+
+#btn-1:checked ~ .slider__controls label[for='btn-1'],
+#btn-2:checked ~ .slider__controls label[for='btn-2'],
+#btn-3:checked ~ .slider__controls label[for='btn-3'] {
+  background: #c1c1c1;
+}
+
+.controls__label {
+  width: 10px;
+  height: 10px;
+  border: 3px solid #fff;
+  background: #fff;
+  margin-right: 9px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.controls__label:last-child {
+  margin-right: 0;
+}
+
+.slider__item {
+  height: 320px;
+  display: none;
+}
+
+.slider__title {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: 1;
+  padding-top: 37px;
+  padding-bottom: 20px;
+  letter-spacing: -0.7px;
+}
+
+.slider__text {
+  color: #283136;
+  letter-spacing: 0.2px;
+}
+
+.slider__link {
+  width: 240px;
+  color: #fff;
+  background: #fb565a;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 11px 0;
+  border-radius: 3px;
+  margin-top: 26px;
+}
+
+#btn-1:checked ~ .slider__inner div:nth-child(1),
+#btn-2:checked ~ .slider__inner div:nth-child(2),
+#btn-3:checked ~ .slider__inner div:nth-child(3) {
+  display: block;
+}
+
+.slider__item--first {
+  background: url('../img/slider-1.png') no-repeat 100% 17px;
+}
+
+.slider__item--second {
+  background: url('../img/slider-2.png') no-repeat 98% 21px;
+}
+
+.slider__item--third {
+  background: url('../img/slider-3.png') no-repeat 99% 0;
 }
