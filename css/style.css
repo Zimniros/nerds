@@ -839,7 +839,7 @@ a {
   margin     : 13px 0;
   font-size  : 1rem;
   line-height: 1.25;
-  color: #666;
+  color      : #666;
 }
 
 .map__link {
@@ -852,4 +852,60 @@ a {
   font-size     : 0.75rem;
   padding       : 12px 0;
   margin-top    : 35px;
+}
+
+/**************************************
+              Footer
+ **************************************/
+.footer {
+  padding-top: 75px;
+}
+
+.footer__description,
+.footer__social,
+.social__item {
+  display: inline-block;
+}
+
+.social__item {
+  margin-right: 21px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  width        : 63px;
+  height       : 63px;
+  background   : #e1e1e1;
+  border-radius: 50%;
+  display      : inline-block;
+  position     : relative;
+}
+
+.social__link svg {
+  position : absolute;
+  left     : 50%;
+  top      : 50%;
+  transform: translate(-50%,-50%);
+  height   : 22px;
+  width    : 22px;
+}
+
+.footer__description {
+  margin-left: 75px;
+}
+
+.footer__description-title {
+  margin     : 0;
+  font-size  : 2.25rem;
+  line-height: 1;
+  padding    : 0;
+}
+
+.footer__description-text {
+  margin-top : 10px;
+  color      : #283136;
+  font-size  : 1rem;
+  line-height: 1.375;
 }
