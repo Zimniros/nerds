@@ -974,7 +974,8 @@ textarea {
 
 .modal {
   display   : none;
-  position  : absolute;
+  z-index: 10;
+  position  : fixed;
   top       : 50%;
   left      : 50%;
   transform : translate(-50%, -50%);
@@ -983,6 +984,10 @@ textarea {
   background: #fff;
   box-shadow: 0 0 55px #000;
   padding   : 50px 90px 50px 80px;
+}
+
+.modal--display {
+  display: block;
 }
 
 .modal__close {

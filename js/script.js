@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  var writeUs = document.getElementById('write-us');
+  var modal = document.querySelector('.modal');
+  var close = document.querySelector('.modal__close');
+
+  writeUs.addEventListener('click', function(event) {
+    event.preventDefault();
+    modal.classList.add('modal--display');
+  });
+
+  close.addEventListener('click', function(event) {
+    event.preventDefault();
+    modal.classList.remove('modal--display');
+  });
+
+  // *******************************
+  //        Google map API
+  // *******************************
   if (document.querySelectorAll('#map').length > 0) {
     if (document.querySelector('html').lang) {
       lang = document.querySelector('html').lang
