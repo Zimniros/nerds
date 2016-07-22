@@ -793,7 +793,7 @@ a {
   float   : left;
   width   : 33%;
   position: relative;
-  opacity: 0.2;
+  opacity : 0.2;
 }
 .clients__link {
   position : absolute;
@@ -802,4 +802,54 @@ a {
   transform: translate(-50%, -50%);
 
 }
-.clients__pic {}
+
+/**************************************
+              Map
+ **************************************/
+
+.map {
+  position : relative;
+  max-width: 1200px;
+  height   : 415px;
+  margin   : 85px auto 0;
+}
+
+#map {
+  height: 100%;
+}
+
+.map__address {
+  position  : absolute;
+  background: #fff;
+  height    : 240px;
+  padding   : 26px 23px;
+  z-index   : 5;
+  top       : 50%;
+  left      : 160px;
+  transform : translateY(-50%);
+}
+
+.map__title {
+  margin     : 0;
+  font-size  : 1rem;
+  line-height: 1.75;
+}
+
+.map__text {
+  margin     : 13px 0;
+  font-size  : 1rem;
+  line-height: 1.25;
+  color: #666;
+}
+
+.map__link {
+  text-transform: uppercase;
+  color         : #fff;
+  display       : block;
+  border-radius : 4px;
+  background    : #fb565a;
+  text-align    : center;
+  font-size     : 0.75rem;
+  padding       : 12px 0;
+  margin-top    : 35px;
+}
