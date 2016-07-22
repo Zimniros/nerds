@@ -556,6 +556,7 @@ a {
 .nav__link--active {
   border-bottom: 2px solid #fb565a;
 }
+
 .nav__link--iconed {
   padding-left: 60px;
   position    : relative;
@@ -716,13 +717,38 @@ a {
 .features__link--red {
   background: #fb565a;
 }
+.features__link--red:hover {
+  background: #d6494d;
+}
+.features__link--red:active {
+  border-top: 3px solid #9b2d30;
+  background: #b63538;
+}
 
 .features__link--green {
   background: #00ca74;
 }
 
+.features__link--green:hover {
+  background: #01a25e;
+}
+
+.features__link--green:active {
+  border-top: 3px solid #007b47;
+  background: #009053;
+}
+
 .features__link--yellow {
   background: #efc84a;
+}
+
+.features__link--yellow:hover {
+  background: #d6ae2c;
+}
+
+.features__link--yellow:active {
+  border-top: 3px solid #a3841f;
+  background: #c09b24;
 }
 
 /**************************************
