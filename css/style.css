@@ -650,7 +650,7 @@ a {
 .features {
   padding-top   : 76px;
   padding-bottom: 81px;
-  border-bottom : 2px solid #000;
+  border-bottom : 2px solid #eee;
 }
 .features:after {
   content: '';
@@ -707,4 +707,70 @@ a {
 
 .features__link--yellow {
   background: #efc84a;
+}
+
+/**************************************
+              About
+ **************************************/
+.about {
+  padding-top   : 59px;
+  padding-bottom: 71px;
+  border-bottom : 2px solid #000;
+
+}
+.about__bottom:after,
+.about__top:after {
+  content: '';
+  display: table;
+  clear  : both;
+}
+.about__description,
+.about__work-types {
+  float: left;
+  width: 70%;
+}
+
+.about__logo,
+.about__work-conditions {
+  float       : right;
+  width       : 30%;
+  padding-left: 23px;
+
+}
+.description__title {
+  font-size  : 2.250rem;
+  line-height: 1;
+  padding    : 10px 0;
+  margin     : 0;
+}
+.description__text {
+  letter-spacing: 0.1px;
+  padding       : 10px 0;
+}
+.logo__pic {
+  display: block;
+  margin : 0 auto;
+}
+
+.about__bottom {
+  padding-top: 32px;
+}
+
+.about__text {
+  text-transform: uppercase;
+}
+
+.work__item {
+  margin-top  : 22px;
+  position    : relative;
+  padding-left: 35px;
+}
+.work__item:before {
+  width     : 25px;
+  height    : 2px;
+  background: #fb565a;
+  content   : '';
+  position  : absolute;
+  left      : 0;
+  top       : 50%;
 }
