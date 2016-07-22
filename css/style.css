@@ -728,11 +728,9 @@ a {
 .features__link--green {
   background: #00ca74;
 }
-
 .features__link--green:hover {
   background: #01a25e;
 }
-
 .features__link--green:active {
   border-top: 3px solid #007b47;
   background: #009053;
@@ -741,11 +739,9 @@ a {
 .features__link--yellow {
   background: #efc84a;
 }
-
 .features__link--yellow:hover {
   background: #d6ae2c;
 }
-
 .features__link--yellow:active {
   border-top: 3px solid #a3841f;
   background: #c09b24;
@@ -837,6 +833,11 @@ a {
   position: relative;
   opacity : 0.2;
 }
+.clients__item:active,
+.clients__item:hover {
+  opacity: 1;
+}
+
 .clients__link {
   position : absolute;
   top      : 50%;
