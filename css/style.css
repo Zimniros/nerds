@@ -927,6 +927,15 @@ a {
   position     : relative;
 }
 
+.social__link:hover {
+  background: #fb565a;
+}
+
+.social__link:active {
+  border-top: 3px solid #b63e42;
+  background: #d6494d;
+}
+
 .social__link svg {
   position : absolute;
   left     : 50%;
