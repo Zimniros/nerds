@@ -570,12 +570,13 @@ textarea {
 }
 
 .nav__link-icon {
-  position : absolute;
-  top      : 50%;
-  transform: translateY(-65%);
-  left     : 25px;
-  width    : 16px;
-  height   : 16px;
+  position         : absolute;
+  top              : 50%;
+  -webkit-transform: translateY(-65%);
+  transform        : translateY(-65%);
+  left             : 25px;
+  width            : 16px;
+  height           : 16px;
 }
 
 .nav__link-icon svg {
@@ -595,10 +596,11 @@ textarea {
 }
 
 .slider__controls {
-  position : absolute;
-  left     : 50%;
-  transform: translateX(-50%);
-  bottom   : 91px;
+  position         : absolute;
+  left             : 50%;
+  -webkit-transform: translateX(-50%);
+  transform        : translateX(-50%);
+  bottom           : 91px;
 }
 #btn-1:checked ~ .slider__controls label[for='btn-1'],
 #btn-2:checked ~ .slider__controls label[for='btn-2'],
@@ -853,10 +855,11 @@ textarea {
 }
 
 .clients__link {
-  position : absolute;
-  top      : 50%;
-  left     : 50%;
-  transform: translate(-50%, -50%);
+  position         : absolute;
+  top              : 50%;
+  left             : 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform        : translate(-50%, -50%);
 
 }
 
@@ -876,14 +879,15 @@ textarea {
 }
 
 .map__address {
-  position  : absolute;
-  background: #fff;
-  height    : 240px;
-  padding   : 26px 23px;
-  z-index   : 5;
-  top       : 50%;
-  left      : 160px;
-  transform : translateY(-50%);
+  position         : absolute;
+  background       : #fff;
+  height           : 240px;
+  padding          : 26px 23px;
+  z-index          : 5;
+  top              : 50%;
+  left             : 160px;
+  -webkit-transform: translateY(-50%);
+  transform        : translateY(-50%);
 }
 
 .map__title {
@@ -956,12 +960,13 @@ textarea {
 }
 
 .social__link svg {
-  position : absolute;
-  left     : 50%;
-  top      : 50%;
-  transform: translate(-50%,-50%);
-  height   : 22px;
-  width    : 22px;
+  position         : absolute;
+  left             : 50%;
+  top              : 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform        : translate(-50%,-50%);
+  height           : 22px;
+  width            : 22px;
 }
 
 .footer__description {
@@ -987,17 +992,18 @@ textarea {
  **************************************/
 
 .modal {
-  display   : none;
-  z-index   : 10;
-  position  : fixed;
-  top       : 50%;
-  left      : 50%;
-  transform : translate(-50%, -50%);
-  width     : 630px;
-  height    : 415px;
-  background: #fff;
-  box-shadow: 0 0 55px #000;
-  padding   : 50px 90px 50px 80px;
+  display          : none;
+  z-index          : 10;
+  position         : fixed;
+  top              : 50%;
+  left             : 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform        : translate(-50%, -50%);
+  width            : 630px;
+  height           : 415px;
+  background       : #fff;
+  box-shadow       : 0 0 55px #000;
+  padding          : 50px 90px 50px 80px;
 }
 
 .modal--display {
