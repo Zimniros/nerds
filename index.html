@@ -242,17 +242,17 @@
 
   <div class="modal">
     <a href="#" class="modal__close">x</a>
-    <form class="modal__form">
+    <form class="modal__form" action="index.html">
       <div class="modal__half">
         <label class="modal__label" for="name">Ваше имя:</label>
-        <input class="modal__input" type="text" id="name" placeholder="Представьтесь, Пожалуйста" />
+        <input class="modal__input" type="text" id="name" placeholder="Представьтесь, Пожалуйста" required/>
       </div>
       <div class="modal__half">
         <label class="modal__label" for="email">Ваш e-mail:</label>
-        <input class="modal__input" type="email" id="name" placeholder="Для отправки ответа" />
+        <input class="modal__input" type="email" id="email" placeholder="Для отправки ответа" required/>
       </div>
       <label class="modal__label" for="message">Текст письма:</label>
-      <textarea class="modal__input" id="message" rows="6" placeholder="В свободной форме"></textarea>
+      <textarea class="modal__input" id="message" rows="6" placeholder="В свободной форме" required></textarea>
       <input class="modal__submit" type="submit" value="Отправить">
     </form>
     <!-- end of .modal__form -->

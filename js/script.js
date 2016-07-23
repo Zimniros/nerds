@@ -3,17 +3,56 @@ document.addEventListener('DOMContentLoaded', function() {
   var writeUs = document.getElementById('write-us');
   var modal = document.querySelector('.modal');
   var close = modal.querySelector('.modal__close');
+  var form = modal.querySelector('.modal__form');
   var userName = modal.querySelector('#name');
+  var userEmail = modal.querySelector('#email');
+  var userMessage = modal.querySelector('#message');
 
+  var storageName = localStorage.getItem('userName');
+  var storageEmail = localStorage.getItem('userEmail');
+
+
+  // *******************************
+  //        Open modal windows
+  // *******************************
   writeUs.addEventListener('click', function(event) {
     event.preventDefault();
     modal.classList.add('modal--display');
-    userName.focus();
+    if (storageName && storageEmail) {
+      userName.value = storageName;
+      userEmail.value = storageEmail;
+      userMessage.focus();
+    } else {
+      userName.focus();
+    }
   });
 
+  // *******************************
+  //        Check inputs on submit
+  // *******************************
+  form.addEventListener('submit', function(event) {
+    if (!userName.value || !userEmail.value || !userMessage.value) {
+      event.preventDefault();
+    } else {
+      localStorage.setItem('userName', userName.value);
+      localStorage.setItem('userEmail', userEmail.value);
+    }
+  });
+
+  // *******************************
+  //        Close modal window
+  // *******************************
   close.addEventListener('click', function(event) {
     event.preventDefault();
     modal.classList.remove('modal--display');
+  });
+
+  window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 27) {
+      if (modal.classList.contains('modal--display')) {
+        modal.classList.remove('modal--display');
+      }
+    }
   });
 
   // *******************************
