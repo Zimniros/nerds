@@ -556,7 +556,7 @@ textarea {
 .nav__link:active {
   color: #8f8f8f;
 }
-.nav__link:hover .nav__link-icon svg {
+.nav__link:active .nav__link-icon svg {
   fill: #8f8f8f;
 }
 
@@ -649,6 +649,13 @@ textarea {
   padding       : 11px 0;
   border-radius : 3px;
   margin-top    : 26px;
+}
+.slider__link:hover {
+  background: #d6494d;
+}
+.slider__link:active {
+  border-top: 3px solid #9b2d30;
+  background: #b63538;
 }
 #btn-1:checked ~ .slider__inner div:nth-child(1),
 #btn-2:checked ~ .slider__inner div:nth-child(2),
@@ -903,6 +910,13 @@ textarea {
   padding       : 12px 0;
   margin-top    : 35px;
 }
+.map__link:hover {
+  background: #d6494d;
+}
+.map__link:active {
+  border-top: 3px solid #9b2d30;
+  background: #b63538;
+}
 
 /**************************************
               Footer
@@ -974,7 +988,7 @@ textarea {
 
 .modal {
   display   : none;
-  z-index: 10;
+  z-index   : 10;
   position  : fixed;
   top       : 50%;
   left      : 50%;
@@ -1004,6 +1018,15 @@ textarea {
   text-align    : center;
   line-height   : 41px;
   font-size     : 30px;
+}
+.modal__close:hover,
+.modal__submit:hover {
+  background: #d6494d;
+}
+.modal__close:active,
+.modal__submit:active {
+  border-top: 3px solid #9b2d30;
+  background: #b63538;
 }
 
 .modal__half {
@@ -1046,6 +1069,7 @@ textarea {
   margin-top    : 37px;
   border        : none;
   outline       : none;
+  cursor        : pointer;
 }
 
 /**********  Placeholder style hack ***********/
