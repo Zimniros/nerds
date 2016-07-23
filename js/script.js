@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var writeUs = document.getElementById('write-us');
   var modal = document.querySelector('.modal');
-  var close = document.querySelector('.modal__close');
+  var close = modal.querySelector('.modal__close');
+  var userName = modal.querySelector('#name');
 
   writeUs.addEventListener('click', function(event) {
     event.preventDefault();
     modal.classList.add('modal--display');
+    userName.focus();
   });
 
   close.addEventListener('click', function(event) {
